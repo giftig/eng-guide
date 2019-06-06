@@ -21,7 +21,7 @@ application is working and help you debug issues, including in live at 3am. Logs
     - Regular high-level activity should be reported at `INF`; this should usually be an activity
       which is a recognisable function of the application and doesn't require in-depth knowledge of
       the application's internals to understand: *Writing 290383 bytes into /tmp/foo/output.json*
-    - Detailed internal should be reported at `DEB`: *Calculating filename for record 123456*
+    - Detailed internal messaging should be reported at `DEB`: *Calculating filename for record 123456*
 
 **With an appropriate pattern:**
   - This is subjective but in logback, for example, a pattern like
