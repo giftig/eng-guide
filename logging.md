@@ -22,8 +22,15 @@ application is working and help you debug issues, including in live at 3am. Logs
       which is a recognisable function of the application and doesn't require in-depth knowledge of
       the application's internals to understand: *Writing 290383 bytes into /tmp/foo/output.json*
     - Detailed internal should be reported at `DEB`: *Calculating filename for record 123456*
-- With an appropriate pattern:
+
+**With an appropriate pattern:**
   - This is subjective but in logback, for example, a pattern like
     `%d{yyyy-MM-dd HH:mm:ss.SSS,UTC} %-3level %logger{26}: %msg %ex{full}%n` is a typical choice.
     Try to balance length of the prefix with having sufficient information to understand the
     context of the logging.
+
+**Checked**:
+A mistake I've often seen made is writing some logging which seems to make sense in the context of
+the code but not checking what the logs actually look like when the application is run and doing
+something. Trying to actually read the logs and understand what the application is doing will give
+you much better insight as to how the logs could be better.
