@@ -13,4 +13,5 @@ more specifically related to these technologies are in my
 
 ## Topics
 
+- [Git](git.md)
 - [Logging](logging.md)
